@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #1a1b1f;
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  padding: 10px 15px 5px 15px;
+  background: #1a1b1f;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60px 240px 240px 50px;
+  grid-row-gap: 30px;
+  overflow: hidden;
+}
+
+/* ---------HEADER---------*/
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  color: #fff;
+  font-size: 25px !important;
+  font-weight: 600;
+}
+
+/* HEIGHT-WEIGHT-COMMON*/
+
+.height-wrapper,
+.weight-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px;
+  border-radius: 10px;
+  background: #1a1b1f;
+  box-shadow: 4px 4px 4px #34352a,
+    -6px -6px 6px #000104;
+}
+
+.htitle,
+.wtitle {
+  color: grey;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+#hRangeValue,
+#wRangeValue {
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 900;
+}
+
+#Cm,
+#Kg{
+  font-size: 30px;
+  color: #fff;
+  font-weight:500;
+  margin-left:5px;
+}
+
+/*---------HEIGHT-WRAPPER----------*/
+
+.range {
+  width:300px;
+  height:20px;
+  -webkit-appearance: none;
+  background: #111;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0,0,0,1);
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+  background: linear-gradient(to right, #E100FF, #7F00FF);
+  cursor: pointer;
+  border: 4px solid #333;
+  box-shadow: -410px 0 0 400px #E100FF;
+  transition:.1s;
+}
+
+/*---------WEIGHT-WRAPPER----------*/
+
+
+
+/*------- LET'S BEGIN BUTTON--------*/
+
+.begin-btn {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius:50px;
+  background: #7F00FF;
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+  background: linear-gradient(to right, #E100FF, #7F00FF);
+}
+
+/*------PAGE-2--------*/
+
+.pg2container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 15px 5px 15px;
+  background: #1a1b1f;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60px 200px 360px;
+  grid-row-gap: 30px;
+  overflow: hidden;
+  display:none;
+}
+
+.pg2header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+      
+.prev-btn {
+  width:45px;
+  height:45px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  border:none;
+  outline: none;
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+  background: linear-gradient(to right, #E100FF, #7F00FF);
+  border-radius: 50%;
+}
+
+.pg2heading {
+  color: #fff;
+  font-size: 30px !important;
+  font-weight: 560;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*-------RESULT-WRAPPER---------*/
+
+.result-wrapper {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:30px;
+  border-radius: 10px;
+  background: #1a1b1f;
+  box-shadow: 4px 4px 4px #34352a,
+  -6px -6px 6px #000104;
+}
+
+#yrbmi-txt {
+  
+}
+
+#bmi-value {
+  font-size:35px;
+  font-weight:700;
+}
+
+#obesity-value {
+  font-size:25px;
+  font-weight:700;
+}
+
+/*--------TABLE-WRAPPER---------*/
+
+.table-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #1a1b1f;
+  box-shadow: 4px 4px 4px #34352a,
+  -6px -6px 6px #000104;
+}
+
+.table-wrapper div{
+  width:90%;
+  height:calc(100%/7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#afafaf;
+  font-size:18px;
+  font-weight:700;
+  font-family: monospace;
+  border-bottom: 1px solid grey;
+}
+
+.table-wrapper .last{
+  border:none;
+}

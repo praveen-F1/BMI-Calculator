@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+  
+  <title>BMI Calculator</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <span class="heading">BMI Calculator</span>
+    </div>
+    
+    <div class="height-wrapper">
+      <span class="htitle">HEIGHT</span>
+      <input type="range" id="hrange" class="range" name="" value="" min="0" max="250" onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)" />
+      <div>
+        <span id="hRangeValue">0</span>
+        <span id="Cm">Cm</span>
+      </div>
+    </div>
+    
+    <div class="weight-wrapper">
+      <span class="wtitle">WEIGHT</span>
+      <input type="range" id="wrange" class="range" name="" value="" min="0" max="200" onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)" />
+      <div>
+        <span id="wRangeValue">0</span>
+        <span id="Kg">Kg</span>
+      </div>
+    </div>
+    
+    <div class="btn-wrapper">
+      <button class="begin-btn" id="beginbtn">Let's Begin</button>
+    </div>
+  </div>
+  
+  <!-------PAGE-2--------->
+  
+  <div class="pg2container" id="pg2">
+    <div class="pg2header">
+      <button class="prev-btn" id="endbtn"><</button>
+      <span class="pg2heading">BMI Info</span>
+    </div>
+    
+    <div class="result-wrapper">
+      <span id="yrbmi-txt">Your BMI</span>
+      <span id="bmi-value">24.49</span>
+      <span id="obesity-value">Normal</span>
+    </div>
+    
+    <div class="table-wrapper">
+      <div>
+        <span>Less than 16</span>
+        <span>Severely Underweight</span>
+      </div>
+      <div>
+        <span>16 to 18.4</span>
+        <span>Underweight</span>
+      </div>
+      <div>
+        <span>18.5 to 24.9</span>
+        <span>Normal</span>
+      </div>
+      <div>
+        <span>25 to 29.9</span>
+        <span>Overweight</span>
+      </div>
+      <div>
+        <span>30 to 34.9</span>
+        <span>Obesity Class |</span>
+      </div>
+      <div>
+        <span>35 to 39.9</span>
+        <span>Obesity Class ||</span>
+      </div>
+      <div class="last">
+        <span>Greater than 40</span>
+        <span>Obesity Class |||</span>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
